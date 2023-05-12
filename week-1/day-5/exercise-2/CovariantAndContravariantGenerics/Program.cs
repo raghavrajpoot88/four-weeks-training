@@ -1,4 +1,7 @@
-﻿namespace CovariantAndContravariantGenerics
+﻿using System.Security.AccessControl;
+using System.IO;
+
+namespace CovariantAndContravariantGenerics
 {
     interface IProcessor<in TInput, out TResult>
     {
@@ -10,7 +13,7 @@
         // Implement Process method
         public int Process(string input)
         {
-            throw new NotImplementedException();
+            return input.Length;
         }
     }
 
@@ -19,7 +22,7 @@
         // Implement Process method
         public string Process(double input)
         {
-            throw new NotImplementedException();
+            return input.ToString();
         }
     }
     internal class Program
@@ -27,6 +30,13 @@
         static void Main(string[] args)
         {
             // Demonstrate covariance and contravariance with IProcessor interface
+            StringToIntProcessor stringToIntProcessor = new StringToIntProcessor();
+            int result1 = stringToIntProcessor.Process("This is intresting");
+            Console.WriteLine(result1);
+
+            DoubleToStringProcessor doubleToIntProcessor = new DoubleToStringProcessor();
+            Object result2 = doubleToIntProcessor.Process(36.1453);
+            Console.WriteLine(result2);
         }
     }
 }
