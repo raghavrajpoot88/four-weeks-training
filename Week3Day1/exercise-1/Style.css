@@ -1,0 +1,29 @@
+header{
+    text-align: center;
+
+}
+a{
+    color:rgb(59, 45, 45);
+    text-decoration: none;
+    margin: 30px;
+}
+nav{
+    text-align: left;
+    background-color: rgb(182, 194, 115);
+    padding: 20px;
+    margin: 0 0 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.paragraph{
+    margin: 50px 50px 50px 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 125%;
+    display: block;
+}
+footer{
+    margin: 66px 0;
+    text-align: center;
+    width: 100%;
+    color: rgb(182, 194, 115);
+}

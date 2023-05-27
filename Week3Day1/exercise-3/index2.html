@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .data,button{
+            font-size: large;
+            text-align: center;
+            padding: auto;
+            margin: 10px;
+        }
+    
+        form{
+            margin: 5px;
+        }
+        .first{
+            margin-right: 18px;
+        }
+    </style>
+    <script>
+        function fun(){
+            event.preventDefault();
+            let input1=parseInt(document.getElementById("num1").value);
+            let input2=parseInt(document.getElementById("num2").value);
+            let sum =input1+input2;
+            // alert(sum)
+            document.getElementById("answer").textContent="the sum of your numbers is "+sum;
+
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <label for="info" class="first" >First Number </label>
+        <input type="text"class="data" id="num1" placeholder="Enter the number"><br>
+        <label for="info" class="">Second Number</label>
+        <input type="text"class="data" id="num2" placeholder="Enter the number"><br>
+        <button onclick="fun()">Sum</button>
+    </form>
+    <p id="answer"></p>
+    
+</body>
+</html>

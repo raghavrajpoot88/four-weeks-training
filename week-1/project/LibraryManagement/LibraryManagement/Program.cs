@@ -23,6 +23,16 @@
                     case 1:
                         // Add a book
                         break;
+                    case 2:
+                        // Update a book
+                        break;
+                    case 3:
+                        // Delete a book
+                        break;
+
+                    case 4:
+                    // List all books
+
                     // ...
                     case 16:
                         // Filter books by status
