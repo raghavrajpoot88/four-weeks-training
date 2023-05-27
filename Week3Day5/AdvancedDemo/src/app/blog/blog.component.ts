@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BlogService } from '../blog.service';
+import { IBlogPost } from '../blog';
 
 
 @Component({
@@ -14,6 +15,8 @@ export class BlogComponent implements OnInit{
   ngOnInit():void{
     this.bgpost.getBlogPost()
       .subscribe(data => this.blogposts=data);
+      console.log("inside the init");
+      
   }
 
 

@@ -14,6 +14,8 @@ export class BlogService {
     
   }
   getBlogPost():Observable<IBlogPost>{
+    console.log("inside the property ");
+    
     return this.http.get<IBlogPost>('https://jsonplaceholder.typicode.com/posts');
   }
 
