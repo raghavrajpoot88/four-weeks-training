@@ -1,0 +1,32 @@
+[
+    {
+        "id":1,
+        "userId": "Phones",
+        "title": "Iphone",
+        "body": "Best phone ever"
+    },
+    {
+        "id":2,
+        "userId": "Biography",
+        "title": "Self introduction",
+        "body": "Intrdoction is very important "
+    },
+    {
+        "id":3,
+        "userId": "Motivation",
+        "title": "Motivation is a process",
+        "body": "Detail ar very large"
+    },
+    {
+        "id":4,
+        "userId": "Fashion",
+        "title": "Importance of fashion",
+        "body": "How you present your self matter"
+    },
+    {
+        "id":5,
+        "userId": "Food",
+        "title": "Reciepe of gulabjamun",
+        "body": "Process"
+    }
+]

@@ -14,7 +14,7 @@ export class BlogComponent implements OnInit{
   
   ngOnInit():void{
     this.bgpost.getBlogPost()
-      .subscribe(data => this.blogposts=data);
+      .subscribe((data: any) => this.blogposts=data);
       console.log("inside the init");
       
   }

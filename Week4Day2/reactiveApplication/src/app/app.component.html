@@ -1,0 +1,33 @@
+<div class="form">
+  <h2 id="registration">Registration Form</h2>
+  <form [formGroup]="reactiveForm" (ngSubmit)="bySubmitting()" action="">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" placeholder="Your name.. " formControlName="firstName">
+    <div>
+      <span style="color: red;" 
+      *ngIf="!reactiveForm.get('lastName').valid  && reactiveForm.get('lastName').touched "
+       > Please Enter Valid First Name</span>
+    </div>
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" placeholder="Your last name.."formControlName="lastName">
+    <div>
+      <span style="color: red;"
+      *ngIf="!reactiveForm.get('lastName').valid  && reactiveForm.get('lastName').touched " > Please Enter Valid Last Name</span>
+    </div>
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="Your last email.."formControlName="email">
+    <div>
+      <span style="color: red;"
+      *ngIf="!reactiveForm.get('email').valid  && reactiveForm.get('email').touched " > Please Enter Valid Email</span>
+    </div>
+    <label for="pass">Password</label>
+    <input type="password" placeholder="Your password" id="pass"formControlName="password">
+    <div>
+      <span style="color: red;"
+      *ngIf="!reactiveForm.get('password').valid  && reactiveForm.get('password').touched " > Please Enter Valid Password</span>
+    </div>
+    <br><br>
+    <input type="submit" value="Submit" id="btn">
+</form>
+</div>
+<router-outlet></router-outlet>

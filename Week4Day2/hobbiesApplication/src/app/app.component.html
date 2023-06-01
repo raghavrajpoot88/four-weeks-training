@@ -1,0 +1,21 @@
+<div class="form">
+  <form [formGroup]="hobby" (ngSubmit)="bySubmitting()" action="">
+  <label for="fname">First Name</label>
+  <input type="text" id="fname" placeholder="Your name.. " formControlName="firstName">
+  <div>
+    <span style="color: red;"
+    *ngIf="!hobby.get('firstName').valid  && hobby.get('firstName').touched ">
+    Please Enter Valid First Name</span>
+  </div>
+  <label for="hobby" >Hobbies</label>
+  <div formArrayName="hobbies" >
+    <ng-container *ngFor="let value of hobby.get('hobbies')['controls'];let index as i">
+      <input type="text" placeholder="Add hobbies.." formControlName="{{i}}">
+      <button class="btn" (click)="removeHobby(i)">Remove a Hobby</button>
+    </ng-container>
+    <button class="btn " (click)="addHobby()">+ Add a Hobby</button>
+  </div>
+</form> 
+<input type="submit" value="Submit" id="btn">
+</div>
+<router-outlet></router-outlet>

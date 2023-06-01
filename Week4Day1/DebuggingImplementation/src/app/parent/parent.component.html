@@ -1,0 +1,9 @@
+<p>parent works!</p>
+<h2>Parent Component</h2>
+<ul>
+  <li *ngFor="let item of items">
+    <app-child [item]="item" (itemClicked)="removeItem($event)"></app-child>
+  </li>
+</ul>
+<ul>
+    

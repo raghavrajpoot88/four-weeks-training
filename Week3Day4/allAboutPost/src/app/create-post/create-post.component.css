@@ -1,0 +1,38 @@
+.container {
+    width: 640px;
+    margin: 30px auto;
+    padding: 20px 30px;
+    background-color:#f7f7f7;
+    font-family: 'Lucida Sans';
+    } I
+    .user-div{
+    display: flex;
+    margin: 5px 0px;
+    }
+    .user-id{
+        width: 30%;
+        padding: 10px 40px;
+        background-color: #eee;
+    }
+    .user-title {
+        width: 30%;
+        padding: 10px 40px;
+        background-color: #FADBD8;
+    }
+    .user-body{
+        width: 30%;
+        padding: 10px 40px;
+        background-color: #FADBD8;
+
+    }
+    .button-div{
+        margin: 5px 0px;
+        padding: 10px 40px;
+        
+    }
+    .btn{
+        margin: 10px;
+        padding: 5px;
+        background-color: lightblue;
+        border-radius: 5px;
+    }
