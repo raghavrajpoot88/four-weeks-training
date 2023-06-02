@@ -8,6 +8,9 @@ import { AboutComponent } from './about/about.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { RestrictService } from './restrict.service';
 import { AuthService } from './auth.service';
+import { HttpClientModule } from '@angular/common/http';
+import { AboutDataService } from './about-data.service';
+import { aboutRasolverDGuard } from './about-rasolver-d.guard';
 
 
 @NgModule({
@@ -19,9 +22,10 @@ import { AuthService } from './auth.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [RestrictService,AuthService],
+  providers: [RestrictService,AuthService, AboutDataService,aboutRasolverDGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -2,3 +2,29 @@
     margin: 30px 100px;
     text-align: center;
 }
+.user-div{
+display: flex;
+margin: 5px 0px;
+display: flex;
+justify-content: center;
+}
+.user-id,.id{
+width: 200px;
+padding: 10px 30px; 
+background-color: #aaa0a0;
+text-align: center;
+}
+.title{
+width: 20%;
+padding: 10px 40px;
+background-color: #FADBDB;
+text-align: center;
+}
+
+
+
+
+
+
+
+

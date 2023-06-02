@@ -15,8 +15,34 @@
             <li class="nav-item">
                 <a class="nav-link " href="#" routerLink="/Contact-Us" routerLinkActive="active">Contact Us</a>
             </li>
+            <li >
+            </li>
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a class="nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Posts</a>
+                    <ul class="dropdown-menu">
+                    <li class="nav-item"><a class="nav-link" routerLink="/posts/informative" >Informative</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#" routerLink="/posts/productivity" routerLinkActive="active">Productivity Blogs</a>
+                    </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a class="nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Careers</a>
+                    <ul class="dropdown-menu">
+                    <li class="nav-item"><a class="nav-link" routerLink="/careers/job-opening" >Job Opening</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#" routerLink="/careers/support" routerLinkActive="active">Support</a>
+                    </li>
+                    </ul>
+                </li>
+            </ul>
+
         </ul>
-        
+        <!-- 
+                   -->
         <!-- <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>

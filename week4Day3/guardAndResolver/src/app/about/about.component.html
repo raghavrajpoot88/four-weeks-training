@@ -1,4 +1,8 @@
-
 <div class="Main">
     <h2>Critical information</h2>
+    <div class="user-div" *ngFor="let album of users">
+        <div class="user-id">{{album.albumId}}</div>
+        <div class="id">{{album.id}}</div>
+        <div class="title">{{album.title}}</div>
+    </div>
 </div>
