@@ -1,0 +1,12 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "ConnectionStrings": {
+    "BookstoreDB": "Data Source=DESKTOP-CD3OO1U;Initial Catalog=BookStoreDB;TrustServerCertificate=True"
+  },
+  "AllowedHosts": "*"
+}

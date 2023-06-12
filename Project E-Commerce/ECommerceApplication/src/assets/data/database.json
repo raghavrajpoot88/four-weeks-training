@@ -1,0 +1,67 @@
+{
+  "sign-up": [
+    {
+      "firstname": "raghav",
+      "lastname": "singh",
+      "email": "abc@gmail.com",
+      "password": "Asdf@123",
+      "id": 1
+    },
+    {
+      "firstName": "Naman",
+      "lastName": "Kumar",
+      "email": "naman@gmail.com",
+      "password": "Asdf@123",
+      "id": 2
+    },
+    {
+      "firstName": "Sanju",
+      "lastName": "Samsan",
+      "email": "sanju@gmail.com",
+      "password": "Asdf@123",
+      "id": 3
+    },
+    {
+      "firstName": "Tanish",
+      "lastName": "Ojha",
+      "email": "tanish@gmail.com",
+      "password": "Asdf@123",
+      "id": 4
+    },
+    {
+      "firstName": "Surbhi",
+      "lastName": "Singh",
+      "email": "surbhi@gmail.com",
+      "password": "Asdf@123",
+      "id": 5
+    },
+    {
+      "firstName": "Sakshi",
+      "lastName": "Jain",
+      "email": "sakshi@gmai.com",
+      "password": "Asdf@123",
+      "id": 6
+    },
+    {
+      "firstName": "Bruce",
+      "lastName": "li",
+      "email": "bruce@gmail.com",
+      "password": "Asdf@123",
+      "id": 7
+    },
+    {
+      "firstName": "John",
+      "lastName": "Cena",
+      "email": "john@gmail.com",
+      "password": "Asdf@123",
+      "id": 8
+    },
+    {
+      "firstName": "Fighter",
+      "lastName": "Singh",
+      "email": "fighter@gmail.com",
+      "password": "Asdf@123",
+      "id": 9
+    }
+  ]
+}
